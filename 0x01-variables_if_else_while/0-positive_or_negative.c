@@ -1,22 +1,22 @@
-#include <stdio.h>
-
 #include <stdlib.h>
 
 #include <time.h>
 
-/* more headers goes there */
+#include <stdio.h>
 
 
-
-/* betty style doc for function main goes there */
 
 /**
 
- * main - entry point
+ * main - Entry point
 
- * Return: 0 is success
+ *
+
+ * Return: Always 0 (Successs/correct)
 
  */
+
+
 
 int main(void)
 
@@ -66,6 +66,4 @@ return (0);
 
 
 
-}  
-
-	
+}
