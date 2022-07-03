@@ -1,9 +1,3 @@
-/*
-
- * File: 0-positive_or_negative.c
-
- * Auth: Charles
-
 #include <stdlib.h>
 
 #include <time.h>
