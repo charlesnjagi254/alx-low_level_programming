@@ -1,33 +1,53 @@
-#include <stdio.h>
+/*
 
-int main() {
+ * File: 0-positive_or_negative.c
 
-    double num;
+ * Auth: Charles
 
-    printf("Enter a number: ");
+#include <stdlib.h>
 
-    scanf("%lf", &num);
+#include <time.h>
 
-    if (num <= 0.0) {
+/* 
 
-        if (num == 0.0)
+ * main - Prints a random number and states whether
 
-            printf("You entered 0.");
+ *        it is positive, negative, or zero.
 
-        else
+ *
 
-            printf("You entered a negative number.");
+ * Return: Always 0.
 
-    } 
+*/
 
-    else
+int main(void)
 
-        printf("You entered a positive number.");
+{
 
-    return 0;
+	int n;
+
+
+
+	srand(time(0));
+
+	n = rand() - RAND_MAX / 2;
+
+
+
+	if (n > 0)
+
+		printf("%d is positive\n", n);
+
+	else if (n < 0)
+
+		printf("%d is negative\n", n);
+
+	else
+
+		printf("%d is zero\n", n);
+
+
+
+	return (0);
 
 }
-
-
-
-
