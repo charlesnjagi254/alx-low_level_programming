@@ -3,31 +3,30 @@
 /**
  * main - print the letters of the alphabet
  *
- * Description: print the letters of the alphabet in lower then in uppercase
+ * Description: print the lettersof the alphabet in lower then in uppercase
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int a; A;
+	int i, j;
 
-	a = 'a';
-	A = 'A';
+	i = 97;
+	j = 65;
 
-	while (a<= 'z')
+	while (i <123)
 	{
-		putchar(a);
-		a++;
+		putchar(i);
+		i++;
 	}
-
-	while (A < 'z')
+	while (j < 91)
 	{
-		putchar(A);
-		A++;
+		putchar(j);
+		j++;
 	}
+	
+	putchar(10);
 
-	putchar('\n');
 	return (0);
 }
-
