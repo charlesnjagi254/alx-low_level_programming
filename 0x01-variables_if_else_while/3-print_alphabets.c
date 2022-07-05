@@ -10,17 +10,19 @@
 
 int main(void)
 {
-	char a = 'a';
-
-	while (a <= 'z')
+	char alpha, capAlpha;
+	alpha = 'a';
+	capAlpha = 'A';
+	while (alpha <= 'z')
 	{
-		putchar(a);
-		a++;
+		putchar(alpha);
+		alpha++;
 	}
 
-	while (a < 'z')
+	while (capAlpha < 'z')
 	{
-		putchar(a);
+		putchar(capAlpha);
+		capAlpha++;
 	}
 
 	putchar('\n');
