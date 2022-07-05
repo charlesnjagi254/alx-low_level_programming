@@ -10,23 +10,20 @@
 
 int main(void)
 {
-	int i, j;
+	char a = 'a';
 
-	i = 97;
-	j = 65;
-
-	while (i < 123)
+	while (a <= 'z')
 	{
-		putchar(i);
-		i++;
+		putchar(a);
+		a++;
 	}
 
-	while (j < 91)
+	while (a < 'z')
 	{
-		putchar(j);
+		putchar(a);
 	}
 
-	putchar(10);
+	putchar('\n');
 	return (0);
 }
 
