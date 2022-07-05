@@ -12,7 +12,8 @@ int main(void)
 {
 	char alpha, capAlpha;
 	alpha = 'a';
-	capAlpha = 'A';
+	Alpha = 'A';
+
 	while (alpha <= 'z')
 	{
 		putchar(alpha);
@@ -22,7 +23,7 @@ int main(void)
 	while (capAlpha < 'z')
 	{
 		putchar(capAlpha);
-		capAlpha++;
+		Alpha++;
 	}
 
 	putchar('\n');
