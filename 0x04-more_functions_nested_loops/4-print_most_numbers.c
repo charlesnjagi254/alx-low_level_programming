@@ -10,7 +10,7 @@ void print_most_numbers(void)
 {
 	int numb;
 
-	for (numb = 48 ; numb <=57 ; numb++)
+	for (numb = 48; numb <=57; numb++)
 	{
 		if (numb ! = 50 && numb ! = 52)
 		{
