@@ -1,4 +1,14 @@
-table File  19 lines (15 sloc)  201 Bytes
+/*
+
+ * File: 1-alphabet.c
+
+ *
+
+ * Auth: Dr Marcus imagwe
+
+ */
+
+
 
 #include "main.h"
 
@@ -6,33 +16,23 @@ table File  19 lines (15 sloc)  201 Bytes
 
 /**
 
- * print_alphabet - print alphabet of letters
-
- *
-
- * Return: void
+ * print_alphabet - prints the alphabet in lowercase, followed by a new line.
 
  */
-
-
 
 void print_alphabet(void)
 
 {
 
-	int i;
+	char alpha;
 
 
 
-	for (i = 'a'; i <= 'z'; i++)
+	for (alpha = 97; alpha <= 122; alpha++)
+
+		_putchar(alpha);
 
 
-
-	{
-
-		_putchar(i);
-
-	}
 
 	_putchar('\n');
 
