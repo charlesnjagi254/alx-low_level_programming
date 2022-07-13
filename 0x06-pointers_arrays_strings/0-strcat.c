@@ -1,22 +1,20 @@
-
-#include "main.h"
-
-
+#include "holberton.h"
 
 /**
-
- * reset_to_98 - takes a pointer to an int as parameter
-
- * and update the value it point to 98
-
- * @n: parameter take the value.
-
+ * *_strcat - concatenates @src to @dest
+ * @src: the source string to append to @dest
+ * @dest: the destiation string to be concatenated upon
+ * Return:pointer to the resulting string
  */
 
-void reset_to_98(int *n)
-
+char *_strcat(char *dest, char *src)
 {
+	int index = 0;
+	int dest_len = 0;
 
-	*n = 98;
-
+	while (dest[index++])
+		dest_len++;
+	for (index = 0; src[index]; index++)
+		dest[dest_len++] = src[index];
+	return (dest);
 }
