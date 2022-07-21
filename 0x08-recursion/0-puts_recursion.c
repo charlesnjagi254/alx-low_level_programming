@@ -8,7 +8,7 @@ void _puts_recursion(char *S)
 {
 	if (*S != '\0')
 	{
-		putchar(*S)
+		putchar(*S);
 		_puts_recursion(s + 1);
 	}
 	else
