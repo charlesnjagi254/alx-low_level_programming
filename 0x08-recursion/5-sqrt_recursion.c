@@ -1,64 +1,52 @@
 #include "main.h"
 
+
+
 /**
 
- * sqtChecker - computes square root recursively doing binary search
+ * power_operation - returns the natural square root of a number.
 
- * @min: inital number
+ * @n: input number.
 
- * @max: last number within the limit of number
+ * @c: iterator.
 
- * @m: given number
+ * Return: square root or -1.
 
- * Return: 1 if not found sqrroot, else sqrroot
+ */
 
- **/
-
-int sqtChecker(int min, int max, int m)
+int power_operation(int n, int c)
 
 {
 
-	long int guess;
-
-
-
-	if (max >= min)
+	if (c % (n / c) == 0)
 
 	{
 
-		guess = min + (max - min) / 2;
+		if (c * (n / c) == n)
 
-		if (guess * guess == m)
+			return (c);
 
-			return (guess);
+		else
 
-/* following binary search */
-
-		if (guess * guess > m)
-
-			return (sqtChecker(min, guess - 1, m));
-
-		if (guess * guess < m)
-
-			return (sqtChecker(guess + 1, max, m));
+			return (-1);
 
 	}
 
-	return (-1);
+	return (0 + power_operation(n, c + 1));
 
 }
 
 /**
 
- * _sqrt_recursion - finds the natural square root of a number
+ * _sqrt_recursion - returns the natural square root of a number.
 
- * @n: given number
+ * @n: input number.
 
- * Return: square root of n or -1
+ * Return: natural square root.
 
- **/
+ */
 
-	int _sqrt_recursion(int n)
+int _sqrt_recursion(int n)
 
 {
 
@@ -70,6 +58,10 @@ int sqtChecker(int min, int max, int m)
 
 		return (0);
 
-	return (sqtChecker(1, n, n));
+	if (n == 1)
+
+		return (1);
+
+	return (power_operation(n, 2));
 
 }
