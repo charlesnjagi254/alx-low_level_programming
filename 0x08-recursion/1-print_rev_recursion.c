@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * _print_rev_recursion - prints string followed by new line
- * @s: pointer to string
+ * _print_rev_recursion - Prints string followed by new line
+ * @s: Pointer to String
  * Return: Void
  */
 void_print_rev_recursion(char *s)
@@ -9,6 +9,6 @@ void_print_rev_recursion(char *s)
 	if(*s != '\0')
 	{
 		_print_rev_recursion(s + 1);
-		putchar(*s)
+		putchar(*s);
 	}
 }
